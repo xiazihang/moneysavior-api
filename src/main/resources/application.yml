@@ -1,0 +1,5 @@
+swagger:
+  app:
+    moneySaviorDescription: |
+      ## Overview
+      The Money Savior API is a RESTful interface that will handle requests to Money Savior resourcs on behalf of the frontend application.
