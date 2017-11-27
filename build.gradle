@@ -33,5 +33,13 @@ dependencies {
             'io.springfox:springfox-swagger2:2.7.0',
             'io.springfox:springfox-swagger-ui:2.7.0'
 	)
-	testCompile('org.springframework.boot:spring-boot-starter-test')
+
+    runtime('org.hsqldb:hsqldb')
+
+	testCompile(
+            'org.springframework.boot:spring-boot-starter-test',
+            'org.hsqldb:hsqldb'
+    )
+
+    testRuntime('org.hsqldb:hsqldb')
 }
