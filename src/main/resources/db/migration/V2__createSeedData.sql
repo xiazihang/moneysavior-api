@@ -1,0 +1,11 @@
+----users seed data
+--INSERT INTO (id, user_name, password, email, nickname, phone_number) users VALUES (1,"user1", "pass1", "email1", "nickname1", 123456);
+--INSERT INTO (id, user_name, password, email, nickname, phone_number) users VALUES (2,"user2", "pass2", "email2", "nickname2", 123456);
+--INSERT INTO (id, user_name, password, email, nickname, phone_number) users VALUES (3,"user3", "pass3", "email3", "nickname3", 123456);
+--INSERT INTO (id, user_name, password, email, nickname, phone_number) users VALUES (4,"user4", "pass4", "email4", "nickname4", 123456);
+--INSERT INTO (id, user_name, password, email, nickname, phone_number) users VALUES (5,"user5", "pass5", "email5", "nickname5", 123456);
+--INSERT INTO (id, user_name, password, email, nickname, phone_number) users VALUES (6,"user6", "pass6", "email6", "nickname6", 123456);
+--INSERT INTO (id, user_name, password, email, nickname, phone_number) users VALUES (7,"user7", "pass7", "email7", "nickname7", 123456);
+--INSERT INTO (id, user_name, password, email, nickname, phone_number) users VALUES (8,"user8", "pass8", "email8", "nickname8", 123456);
+--INSERT INTO (id, user_name, password, email, nickname, phone_number) users VALUES (9,"user9", "pass9", "email9", "nickname9", 123456);
+--INSERT INTO (id, user_name, password, email, nickname, phone_number) users VALUES (10,"user10", "pass10", "email10", "nickname10", 123456);

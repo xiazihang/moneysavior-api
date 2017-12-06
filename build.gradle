@@ -11,6 +11,7 @@ buildscript {
 }
 
 apply plugin: 'java'
+apply plugin: 'application'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'checkstyle'
@@ -31,15 +32,22 @@ dependencies {
 			'org.springframework.boot:spring-boot-starter-data-jpa',
 			'org.postgresql:postgresql',
             'io.springfox:springfox-swagger2:2.7.0',
-            'io.springfox:springfox-swagger-ui:2.7.0'
+            'io.springfox:springfox-swagger-ui:2.7.0',
+            'org.flywaydb:flyway-core'
 	)
 
-    runtime('org.hsqldb:hsqldb')
+    runtime('com.h2database:h2')
 
 	testCompile(
             'org.springframework.boot:spring-boot-starter-test',
-            'org.hsqldb:hsqldb'
+            'com.h2database:h2'
     )
 
-    testRuntime('org.hsqldb:hsqldb')
+    testRuntime('com.h2database:h2')
 }
+
+applicationDefaultJvmArgs = [
+        "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=8888"
+]
+
+
