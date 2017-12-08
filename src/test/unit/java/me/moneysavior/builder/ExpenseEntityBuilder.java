@@ -18,7 +18,7 @@ public class ExpenseEntityBuilder {
 
     public ExpenseEntity build() {
         ExpenseEntity expenseEntity = new ExpenseEntity();
-        expenseEntity.setUserEntity(userEntity);
+        expenseEntity.setUser(userEntity);
         expenseEntity.setOccurDate(occurDate);
         expenseEntity.setAmount(amount);
         expenseEntity.setExpenseType(expenseType);

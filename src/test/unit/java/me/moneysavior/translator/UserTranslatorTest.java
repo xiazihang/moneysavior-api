@@ -2,7 +2,6 @@ package me.moneysavior.translator;
 
 import me.moneysavior.builder.UserEntityBuilder;
 import me.moneysavior.entity.UserEntity;
-import me.moneysavior.model.User;
 import me.moneysavior.model.User.UserData.UserAttributes;
 import me.moneysavior.model.Users;
 import org.junit.Test;
@@ -24,7 +23,7 @@ public class UserTranslatorTest {
         List<UserEntity> userEntities = of(userEntityBuilder.withDefault().build(),
                 userEntityBuilder.withDefault().build());
         Users results = userTranslator.translateToUsers(userEntities);
-        UserAttributes userAttributes = results.getData().get(0).getData().getAttributs();
+        UserAttributes userAttributes = results.getData().get(0).getData().getAttributes();
 
         assertThat(results.getData(), hasSize(2));
         assertThat(userAttributes.getEmail(), is("email"));

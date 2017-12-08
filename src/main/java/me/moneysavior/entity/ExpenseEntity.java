@@ -22,7 +22,7 @@ public class ExpenseEntity {
 
     @ManyToOne(cascade = ALL)
     @JoinColumn(name = "user_id", nullable = false)
-    private UserEntity userEntity;
+    private UserEntity user;
 
     @Column(name = "occur_date", nullable = false)
     private Date occurDate = new Date();
@@ -44,12 +44,12 @@ public class ExpenseEntity {
         this.id = id;
     }
 
-    public UserEntity getUserEntity() {
-        return userEntity;
+    public UserEntity getUser() {
+        return user;
     }
 
-    public void setUserEntity(UserEntity userEntity) {
-        this.userEntity = userEntity;
+    public void setUser(UserEntity user) {
+        this.user = user;
     }
 
     public Date getOccurDate() {

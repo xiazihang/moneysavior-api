@@ -10,6 +10,8 @@ import javax.persistence.Table;
 import java.util.ArrayList;
 import java.util.List;
 
+import static javax.persistence.CascadeType.ALL;
+
 @Entity
 @Table(name = "users")
 public class UserEntity {
@@ -34,7 +36,7 @@ public class UserEntity {
     @Column(name = "phone_number", nullable = false)
     private Integer phoneNumber;
 
-    @OneToMany
+    @OneToMany(mappedBy = "user", cascade = ALL)
     private List<ExpenseEntity> expenseEntities = new ArrayList<>();
 
     public Integer getId() {
@@ -83,5 +85,13 @@ public class UserEntity {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public List<ExpenseEntity> getExpenseEntities() {
+        return expenseEntities;
+    }
+
+    public void setExpenseEntities(List<ExpenseEntity> expenseEntities) {
+        this.expenseEntities = expenseEntities;
     }
 }

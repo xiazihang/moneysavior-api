@@ -26,4 +26,9 @@ public class UserControllerTest {
         userController.getUsersByEmail("email address");
         verify(userService).getUsersByEmail(EMAIL_ADDRESS);
     }
+
+    @Test
+    public void shouldDelegateToUserServiceToCreateUser() throws Exception {
+
+    }
 }

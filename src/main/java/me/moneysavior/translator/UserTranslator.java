@@ -27,7 +27,11 @@ public class UserTranslator {
     }
 
 
-    public List<UserEntity> translateToUserEntities(List<User> user) {
+    public UserEntity translateToUserEntity(User user) {
+        return null;
+    }
+
+    public User translateToUser(UserEntity userEntity) {
         return null;
     }
 
@@ -40,7 +44,7 @@ public class UserTranslator {
         userAttributes.setNickname(userEntity.getNickname());
         userAttributes.setPhoneNumber(userEntity.getPhoneNumber());
 
-        userData.setAttributs(userAttributes);
+        userData.setAttributes(userAttributes);
         user.setData(userData);
         return user;
     }
